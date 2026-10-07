@@ -1,0 +1,263 @@
+/* ==============================
+   GENERAL
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background: #eeeeee;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+
+/* ==============================
+   CV PAPER
+   ============================== */
+
+.cv-container {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 17mm 18mm;
+    background: #ffffff;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+.cv-header {
+    text-align: center;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #333;
+}
+
+.cv-header h1 {
+    margin: 0;
+    font-size: 27px;
+    letter-spacing: 0.8px;
+}
+
+.professional-title {
+    margin: 4px 0 9px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact-info,
+.online-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 14px;
+    font-size: 10.5px;
+}
+
+.online-links {
+    margin-top: 5px;
+}
+
+.online-links a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.online-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   SECTIONS
+   ============================== */
+
+.cv-section {
+    margin-top: 14px;
+}
+
+.cv-section h2 {
+    margin: 0 0 6px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #999;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.cv-section p {
+    margin: 3px 0;
+}
+
+
+/* ==============================
+   EDUCATION
+   ============================== */
+
+.education-item h3,
+.certification-item h3,
+.experience-item h3 {
+    margin: 0;
+    font-size: 11.5px;
+}
+
+.education-item p,
+.certification-item p,
+.experience-item p {
+    margin: 2px 0;
+}
+
+
+/* ==============================
+   SKILLS
+   ============================== */
+
+.skills-list {
+    margin: 5px 0 0;
+    padding-left: 18px;
+}
+
+.skills-list li {
+    margin-bottom: 2px;
+}
+
+
+/* ==============================
+   EXPERIENCE
+   ============================== */
+
+.experience-item {
+    margin-bottom: 8px;
+}
+
+.experience-item ul {
+    margin: 4px 0 0;
+    padding-left: 18px;
+}
+
+.experience-item li {
+    margin-bottom: 3px;
+}
+
+
+/* ==============================
+   PRINT
+   ============================== */
+
+@media print {
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        font-size: 12px;
+        line-height: 1.35;
+    }
+
+    .cv-container {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 10mm 15mm;
+    }
+
+    .cv-header {
+        padding-bottom: 10px;
+    }
+
+    .cv-header h1 {
+        font-size: 25px;
+    }
+
+    .professional-title {
+        margin: 3px 0 7px;
+        font-size: 12px;
+    }
+
+    .contact-info,
+    .online-links {
+        font-size: 9.5px;
+    }
+
+    .cv-section {
+        margin-top: 10px;
+    }
+
+    .cv-section h2 {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .cv-section p {
+        margin: 2px 0;
+    }
+
+    .education-item,
+    .certification-item,
+    .experience-item {
+        margin-bottom: 5px;
+    }
+
+    .education-item h3,
+    .certification-item h3,
+    .experience-item h3 {
+        font-size: 11px;
+    }
+
+    .skills-list {
+        margin-top: 3px;
+    }
+
+    .skills-list li {
+        margin-bottom: 1px;
+    }
+
+    .experience-item ul {
+        margin-top: 2px;
+    }
+
+    .experience-item li {
+        margin-bottom: 2px;
+    }
+
+    .online-links a {
+        color: #222;
+    }
+}   
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .cv-container {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 20px;
+    }
+
+    .cv-header h1 {
+        font-size: 24px;
+    }
+
+    .contact-info,
+    .online-links {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
